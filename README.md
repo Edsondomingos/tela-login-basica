@@ -2,11 +2,10 @@
 
 > Projeto feito apenas com HTML, CSS e Javascript
 
-## Para a execução deste projeto há basicamente 2 opções
+## Para a execução deste projeto
 
-1. Baixar este repositorio e executar o arquivo index.html em qualquer navegador (Chrome, Firefox, Edge ...)
 
-2. Acessa o link abaixo para testar a tela de login disponivel online no github pages:<br/>
+Acessa o link abaixo para testar a tela de login disponivel online no github pages:<br/>
 [Acessar Tela de Login](https://edsondomingos.github.io/tela-login-basica/)
 
 ## Teste de login
