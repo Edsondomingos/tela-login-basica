@@ -1,0 +1,87 @@
+:root {
+    --fonte-padrao: 17px;
+
+    background: url('./imgs/f4.jpg') no-repeat;
+    background-size: cover;
+    background-color: #388b70;
+    background-blend-mode: overlay;
+}
+
+form, section {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    background-color: #FFFFFF;
+    opacity: .4;
+    width: 70%;
+    height: 200px;
+    max-width: 750px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px #e9f035;
+    padding: 20px;
+}
+
+fieldset:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+fieldset:not(hover) {
+    transition: .5s;
+}
+
+legend {
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #e9f035;
+    transform: translateY(100px) translateX(20%);
+    margin: auto;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    font-size: var(--fonte-padrao);
+
+    visibility: hidden;
+}
+
+.aviso {
+    display: none;
+    color: #e9f035;
+    text-shadow: 1px 1px 1px #000;
+}
+
+button {
+    width: 50%;
+    padding: 7px;
+    font-size: var(--fonte-padrao);
+    border: none;
+    background: #e9f035;
+
+    visibility: hidden;
+}
+
+button:hover {
+    border: 3px solid aquamarine;
+    transition: .5s;
+    text-shadow: 2px 2px 2px aquamarine;
+}
+
+.bem-vindo {
+    width: 50%;
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+} 
+
