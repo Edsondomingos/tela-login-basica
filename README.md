@@ -6,5 +6,19 @@
 
 1. Baixar este repositorio e executar o arquivo index.html em qualquer navegador (Chrome, Firefox, Edge ...)
 
-2. Acessa o link abaixo para testar a tela de login disponivel online no github pages:
-[Acessar Tela de Login](https://github.com/Edsondomingos/Desafio-de-codigo-php-tecnotech)
+2. Acessa o link abaixo para testar a tela de login disponivel online no github pages:<br/>
+[Acessar Tela de Login](https://edsondomingos.github.io/tela-login-basica/)
+
+## Teste de login
+-  Nao deve ser possivel logar com campos em branco
+- Não deve ser possivel logar com email e senha incorretos
+- Os email e senhas diponiveis para login estam no arquivo **dados.json**.
+
+> logins para teste
+
+| email | senha |
+|-------|-------|
+|teste@teste|teste1|
+|edomingoswork@gmail.com| edsondomingos
+
+
