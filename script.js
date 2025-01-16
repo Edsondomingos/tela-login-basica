@@ -1,5 +1,6 @@
 const form = document.querySelector('form')
 const fieldset = document.querySelector('fieldset')
+const legend = document.querySelector('legend')
 const inputs = document.querySelectorAll('input')
 const section = document.querySelector('section')
 const email = document.querySelector('[data-email]')
@@ -12,7 +13,7 @@ async function autenticar() {
     try {
         await fetch('dados.json')
             .then(response => response.json().then(dados => {
-
+                let autenticado = true
                 dados.forEach(element => {
                     if (element.email == email.value && element.password == password.value) {
                         form.style = `
@@ -20,19 +21,21 @@ async function autenticar() {
                         border-radius: 100%;
                         transition: 2s;
                         width: 250px;
-                `
+                        `
+                        legend.style.visibility = 'hidden'
                         setTimeout(() => {
                             form.style.display = 'none'
                             section.style.display = 'block'
                         }, 3000)
                         aviso.style.display = 'none'
-                        return
+                        autenticado = false
                     }
-
+                });
+                if (autenticado) {
                     aviso.textContent = 'email ou senha incorreto(s)'
                     aviso.style.display = 'block'
-
-                });
+                    autenticado = true
+                }
             }))
             .catch(e => aviso.textContent = 'Sistema Indisponivel')
     } catch (erro) {
@@ -69,7 +72,7 @@ password.addEventListener('keyup', () => {
 // Animação ao estar com o mouse sobre o formulario
 fieldset.addEventListener('mouseover', (e) => {
     inputs.forEach(e => e.style.visibility = 'visible')
-    document.querySelector('legend').style = `
+    legend.style = `
     font-size: 22px;
     transform: translateY(0) translateX(0);
     transition: 1s;`
@@ -79,7 +82,7 @@ fieldset.addEventListener('mouseover', (e) => {
 
 fieldset.addEventListener('mouseleave', (e) => {
     inputs.forEach(e => e.style.visibility = 'hidden')
-    document.querySelector('legend').style = `
+    legend.style = `
     font-size: 50px;
     transform: translateY(100) translateX(190);
     transition: 1s;`

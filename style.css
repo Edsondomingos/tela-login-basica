@@ -85,3 +85,13 @@ button:hover {
     font-weight: bold;
 } 
 
+iframe {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* padding: 10px; */
+}
+
